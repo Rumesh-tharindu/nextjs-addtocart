@@ -1,0 +1,286 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  // inter font
+  @font-face {
+    font-family: "inter";
+    font-weight: 300;
+    src: url("./assets/fonts/Inter/Inter-Light.ttf") format("ttf");
+  }
+  @font-face {
+    font-family: "inter";
+    font-weight: 400;
+    src: url("./assets/fonts/Inter/Inter-Regular.ttf");
+  }
+  @font-face {
+    font-family: "inter";
+    font-weight: 500;
+    src: url("./assets/fonts/Inter/Inter-Medium.ttf");
+  }
+
+  @font-face {
+    font-family: "inter";
+    font-weight: 600;
+    src: url("./assets/fonts/Inter/Inter-SemiBold.ttf");
+  }
+
+  @font-face {
+    font-family: "inter";
+    font-weight: 700;
+    src: url("./assets/fonts/Inter/Inter-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: "inter";
+    font-weight: 800;
+    src: url("./assets/fonts/Inter/Inter-ExtraBold.ttf");
+  }
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+body {
+  margin: 0;
+  @apply font-primary text-sm  text-primary leading-5 overflow-x-hidden;
+}
+
+h6,
+h5,
+h4,
+h3,
+h2,
+h1 {
+  @apply font-bold  mb-4;
+}
+
+h1 {
+  @apply text-[64px] font-bold leading-[70px] mb-8;
+}
+@screen lg {
+  h1 {
+    font-size: 45px;
+    line-height: 59px;
+  }
+}
+@screen md {
+  h1 {
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+@screen sm {
+  h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+
+h2 {
+  @apply text-[48px]  leading-[56px];
+}
+
+@screen lg {
+  h2 {
+    font-size: 40px;
+    line-height: 59px;
+  }
+}
+@screen md {
+  h2 {
+    font-size: 35px;
+    line-height: 36px;
+  }
+}
+@screen sm {
+  h2 {
+    font-size: 30px;
+  }
+}
+h3 {
+  @apply text-[40px] leading-[48px];
+}
+@screen lg {
+  h3 {
+    font-size: 32px;
+    line-height: 59px;
+  }
+}
+@screen md {
+  h3 {
+    font-size: 30px;
+    line-height: 34px;
+  }
+}
+@screen sm {
+  h3 {
+    font-size: 26px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 360px) {
+  h3 {
+    font-size: 24px;
+    line-height: 22px;
+  }
+}
+h4 {
+  @apply text-[32px] leading-[40px];
+}
+@screen lg {
+  h4 {
+    @apply text-[28px] leading-[30px];
+  }
+}
+@screen md {
+  h4 {
+    @apply text-[24px] leading-[24px];
+  }
+}
+@screen sm {
+  h4 {
+    @apply text-[20px] leading-[20px];
+  }
+}
+
+h5 {
+  @apply text-[18px] font-semibold leading-6 mb-2 font-primary;
+}
+
+p {
+  @apply text-base font-normal font-primary leading-[22px] mb-4;
+}
+
+ol,
+ul {
+  padding-left: 2rem;
+}
+li > ul,
+li > ol {
+  margin-bottom: 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: underline;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+code {
+  font-size: 0.875em;
+  color: #d63384;
+  word-wrap: break-word;
+}
+
+a > code {
+  color: inherit;
+}
+
+figure {
+  margin: 0 0 1rem;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: inherit;
+  text-align: -webkit-match-parent;
+}
+
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
+label {
+  display: inline-block;
+}
+
+button {
+  border-radius: 0;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+select {
+  word-wrap: normal;
+}
+
+select:disabled {
+  opacity: 1;
+}
+
+[list]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+legend {
+  float: left;
+  width: 100%;
+  padding: 0;
+  margin-bottom: 0.5rem;
+  font-size: calc(1.275rem + 0.3vw);
+  line-height: inherit;
+}
+
+@media (min-width: 1200px) {
+  legend {
+    font-size: 1.5rem;
+  }
+}
+
+iframe {
+  border: 0;
+}

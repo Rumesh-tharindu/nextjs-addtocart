@@ -1,0 +1,218 @@
+.section-top {
+  padding-top: 6rem;
+}
+.section-bottom {
+  padding-bottom: 6rem;
+}
+@screen md {
+  .section-top {
+    padding-top: 4rem;
+  }
+  .section-bottom {
+    padding-bottom: 4rem;
+  }
+}
+@screen sm {
+  .section-top {
+    padding-top: 2.5rem;
+  }
+  .section-bottom {
+    padding-bottom: 2.5rem;
+  }
+}
+
+.container {
+  @apply w-full max-w-[1353px] px-4 mx-auto;
+}
+
+.container-v {
+  @apply w-11/12  ml-auto relative;
+}
+
+.container-inner {
+  @apply w-full max-w-[1128px] px-4 mx-auto;
+}
+
+@media (max-width: 640px) {
+  .container-v {
+    @apply w-full;
+  }
+}
+
+.section-label {
+  @apply font-primary text-sm text-gray leading-[20px] mb-12 uppercase;
+}
+
+.section-title {
+  @apply text-blue mb-8;
+}
+
+@screen md {
+  .section-title {
+    @apply text-blue mb-12;
+  }
+}
+@screen sm {
+  .section-title {
+    @apply text-blue mb-8;
+  }
+}
+.btn--primary {
+  @apply bg-blue-400 no-underline py-6 px-8 text-center  text-white-100 text-base leading-[16px];
+}
+
+.btn--primary.btn-icon {
+  @apply flex gap-4 items-center;
+  width: fit-content;
+}
+
+.btn-1 {
+  @apply text-base leading-[16px]  font-bold;
+}
+
+.btn-2 {
+  @apply text-sm leading-[16px]  font-medium;
+}
+
+.btn-white-outline {
+  @apply border no-underline border-white-100 text-white py-4 px-8 inline-block mt-8;
+}
+.btn-black-outline {
+  @apply border no-underline  inline-flex border-black-600 text-black-600   py-4 px-8;
+}
+.btn-black-outline.btn-icon {
+  @apply gap-4;
+}
+.row {
+  @apply flex -mr-4 -ml-4 flex-wrap;
+}
+
+.heroTopPadding {
+  @apply pt-[14%];
+}
+
+.font-body-1 {
+  @apply text-black-500;
+  font-size: 24px;
+  line-height: 36px;
+}
+.font-body-1-bold {
+  @apply font-semibold text-black-500;
+  font-size: 24px;
+  line-height: 32px;
+}
+.font-body-2 {
+  @apply font-normal text-black-500;
+  font-size: 16px;
+  line-height: 28px;
+}
+.font-body-2-bold {
+  @apply font-medium text-black-500;
+  font-size: 16px;
+  line-height: 24px;
+}
+.font-body-small {
+  @apply text-gray;
+  font-size: 14px;
+  line-height: 22px;
+}
+.font-body-small-bold {
+  @apply font-medium;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.font-caption {
+  @apply font-primary text-[14px] leading-[20px] font-normal;
+}
+.font-caption-bold {
+  @apply font-primary text-[14px] leading-[24px] font-medium;
+}
+.font-caption-2 {
+  @apply font-primary text-[12px] leading-[20px] font-normal;
+}
+.font-caption-2-bold {
+  @apply font-primary text-[12px] leading-[20px] font-bold;
+}
+.font-btn-1 {
+  @apply text-base leading-[16px]  font-medium;
+}
+.font-btn-2 {
+  @apply text-sm leading-[16px]  font-medium;
+}
+
+.section-link a {
+  @apply py-4  cursor-pointer flex gap-4 no-underline text-gray-400 mt-8;
+}
+
+.btn-2 {
+  @apply py-4  cursor-pointer flex gap-4 no-underline text-gray-400 mt-8;
+}
+@media (max-width: 1600px) {
+  .heroTopPadding {
+    @apply pt-[15%];
+  }
+}
+
+@media (max-width: 1400px) {
+  .heroTopPadding {
+    @apply pt-[18%];
+  }
+}
+@media (max-width: 1280px) {
+  .heroTopPadding {
+    @apply pt-[20%];
+  }
+}
+@media (max-width: 1024px) {
+  .font-body-1 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .heroTopPadding {
+    @apply pt-[30%];
+  }
+}
+@media (max-width: 920px) {
+  .section-title {
+    @apply mb-8;
+  }
+}
+@media (max-width: 850px) {
+  .heroTopPadding {
+    @apply pt-[30%];
+  }
+}
+@media (max-width: 768px) {
+  .heroTopPadding {
+    @apply pt-[24%];
+  }
+}
+
+@media (max-width: 635px) {
+  .heroTopPadding {
+    @apply pt-[30%];
+  }
+}
+
+@media (max-width: 520px) {
+  .heroTopPadding {
+    @apply pt-[25%];
+  }
+}
+@media (max-width: 420px) {
+  .heroTopPadding {
+    @apply pt-[30%];
+  }
+}
+@media (max-width: 420px) {
+  .heroTopPadding {
+    @apply pt-[35%];
+  }
+}
+
+@media (max-width: 280px) {
+  .heroTopPadding {
+    @apply pt-[50%];
+  }
+}
