@@ -3,9 +3,7 @@ import "./footer.scss";
 const Footer = () => {
   return (
     <div className="footer">
-      <div className="container">
-        <h1 className="text-white-100">Footer</h1>
-      </div>
+      <p>Copyright GamesKart © 2023</p>
     </div>
   );
 };

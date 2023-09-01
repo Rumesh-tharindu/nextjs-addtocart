@@ -1,6 +1,19 @@
 .header {
-  @apply bg-red-500;
-  h1 {
-    @apply mb-0;
+  @apply p-8;
+  .navigation {
+    @apply flex justify-between items-center;
+  }
+  .navLinks {
+    ul {
+      @apply flex;
+    }
+
+    li {
+      @apply mx-8;
+
+      a {
+        @apply text-base no-underline uppercase;
+      }
+    }
   }
 }
