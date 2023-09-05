@@ -1,0 +1,19 @@
+.productCard {
+  @apply w-1/4 px-4 mb-4;
+
+  .productCardHeader {
+    @apply bg-auto bg-center bg-no-repeat;
+    &::before {
+      content: "";
+      display: block;
+      padding-top: 100%;
+    }
+  }
+  .productCardFooter {
+    @apply p-4 px-0;
+
+    button {
+      @apply border border-black-200 p-4 text-center w-full;
+    }
+  }
+}
