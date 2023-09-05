@@ -1,2 +1,15 @@
 .categoryCard {
+  @apply relative;
+  img {
+    @apply h-full;
+  }
+
+  .info {
+    @apply absolute top-[50%] left-[50%] bg-white-100 p-4 flex justify-center items-center flex-col border-4 border-gray;
+    transform: translate(-50%, -50%);
+
+    h3 {
+      @apply text-xl;
+    }
+  }
 }

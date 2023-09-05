@@ -1,7 +1,8 @@
 .home {
-  @apply h-[85vh];
-
   .smallGrid {
-    @apply grid gap-4 grid-cols-3;
+    @apply grid gap-4 grid-cols-3 mb-8;
+  }
+  .largeGrid {
+    @apply grid gap-4 grid-cols-2;
   }
 }
