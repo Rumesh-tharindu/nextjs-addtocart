@@ -6,7 +6,7 @@ const ProductCards = ({ products }: any) => {
     <>
       <div className="productCards">
         {products.map((product: any, index: number) => {
-          return <ProductCard product={product} />;
+          return <ProductCard product={product} key={index} />;
         })}
       </div>
     </>
